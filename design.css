@@ -1,23 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body {
   width: 99vw;
   height: 98vh;
   display: flex;
   justify-content: center;
+  font-size: 120%;
   align-items: center;
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: gray;
+  background-image: url('https://source.unsplash.com/1600x900/?ottawa');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card {
-  background: wheat;
+  background: #02051fb9;
   padding: 2em;
+  color: white;
   width: 100%;
+
   max-width: 420px;
   margin: 0.5em;
+  border-radius: 50px;
 }
 button {
-  width: 40px;
-  height: 40px;
+  outline: none;
+  width: 30px;
+  height: 2.5em;
+  margin: 1em;
+  border-radius: 10px;
+  background-color: #160f3a86;
+  border: none;
+  transition: background 0.5s ease;
+}
+
+.card .description {
+  text-transform: capitalize;
+}
+button:hover {
+  background-color: #433390e8;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search .searchBar {
+  outline: none;
+  border-radius: 5%;
+  width: calc(100% -30px);
+  padding: 0.7em;
+  border-radius: 20px;
+  border: none;
+  background-color: #02051f86;
+  color: #fff;
+  font-size: 1em;
+  font-family: 'Miriam Libre', sans-serif;
+}
+
+.mainbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.mainbox .temp {
+  font-size: 70px;
+}
+
+.mainbox .icon {
+  width: 70px;
+}
+
+h1.temp {
+  margin: 0;
 }
