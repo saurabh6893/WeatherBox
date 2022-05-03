@@ -115,4 +115,10 @@ h1.temp {
 
   border-radius: 100px 10px;
   aspect-ratio: 4/1;
+  font-weight: 500;
+  color: black;
+}
+
+.mm.nope {
+  display: none;
 }

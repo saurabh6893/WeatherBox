@@ -40,6 +40,15 @@ let weather = {
     this.fetchWeather(document.querySelector('.searchBar').value)
   },
 }
+
+setInterval(() => {
+  if (document.querySelector('.searchBar').value === '') {
+    document.querySelector('.mm').classList.add('nope')
+  } else {
+    document.querySelector('.mm').classList.remove('nope')
+  }
+}, 5000)
+
 document.querySelector('.search button').addEventListener('click', function () {
   weather.search()
 })
