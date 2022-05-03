@@ -17,9 +17,8 @@ let weather = {
 
     const { temp, humidity } = data.main
     const { speed } = data.wind
-    // const url = `url:https://source.unsplash.com/1600x900/?${name}`
 
-    console.log(name, icon, description, temp, humidity, speed)
+    // console.log(name, icon, description, temp, humidity, speed)
     document.querySelector('.city').innerText = 'Weather in ' + name
     document.querySelector('.icon').src =
       'https://openweathermap.org/img/wn/' + icon + '.png'
